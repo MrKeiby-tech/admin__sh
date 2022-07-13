@@ -4,8 +4,19 @@ admin.sh
 
 /var/www/<site_name> 
 
-Добавляет конфиги nginx и apache в 
+
+Для работы скрипта в папке со скриптом должна быть папка 
+
+./tmpl/ 
+
+в ней должны быть базовые конфиги 
+
+ngx.tmpl и httpd.tmpl
+
+в которорых домен заменен на ##FQDN## 
  
+Добавляет конфиги nginx и apache в
+
 /var/www/<site_name>/conf/nginx.conf 
 /var/www/<site_name>/conf/httpd.conf 
 
